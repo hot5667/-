@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Sever.exe
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Sever.deps.json
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Sever.runtimeconfig.json
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Sever.runtimeconfig.dev.json
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Sever.dll
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Sever.pdb
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.Form1.resources
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.csproj.GenerateResource.cache
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.AssemblyInfo.cs
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.dll
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.pdb
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.genruntimeconfig.cache
