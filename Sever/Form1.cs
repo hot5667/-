@@ -10,6 +10,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
+using Xamarin.Forms;
 
 namespace Sever
 {
@@ -154,6 +155,60 @@ namespace Sever
         {
             if (string.IsNullOrEmpty(tbPayload.Text))
                 return;
+            try
+            {
+                if (!Connected) 
+                    return;
+                tx = Encoding.ASCII.GetBytes(tbPayload.Text + "\r\n");
+                if(mTcpClient != null)
+                {
+                    if (mTcpClient.Client.Connected)
+                    {
+                        mTcpClient.GetStream().BeginWrite(tx, 0, tx.Length, onCompleteWriteToSever, mTcpClient);
+                    }
+                }
+            }
+            catch(Exception exc)
+            {
+                bConnected = false;
+                MessageBox.Show(exc.Message);
+            }
+        }
+        void onCompleteWriteToSever(IAsyncResult iar)
+        {
+            TcpClient tcpc;
+
+            try
+            {
+                tcpc = (TcpClient)iar.AsyncState;
+                tcpc.GetStream().EndWrite(iar);
+            }
+            catch(Exception exc)
+            {
+                //bConnected = false;
+                MessageBox.Show(exc.Message);
+            }
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+                this.WindowState = FormWindowState.Normal;
+            this.Activate(); 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if(this .WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon1.Visible = false;
+            }
         }
     }
 }

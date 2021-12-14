@@ -7,8 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Sever/1.0.0": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2244"
+        },
         "runtime": {
           "Sever.dll": {}
+        }
+      },
+      "Xamarin.Forms/5.0.0.2244": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.819"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.819"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.819"
+          }
         }
       }
     }
@@ -18,6 +37,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Xamarin.Forms/5.0.0.2244": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ssr+0Pf11oHcaMHM4dHXW1NGex0h9uH7gQxuoLtiZcdPtXBli3SXzY3rF9ovp4Bw2mTe7cYpvy554pIpuW6fvA==",
+      "path": "xamarin.forms/5.0.0.2244",
+      "hashPath": "xamarin.forms.5.0.0.2244.nupkg.sha512"
     }
   }
 }

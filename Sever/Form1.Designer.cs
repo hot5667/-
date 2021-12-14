@@ -36,10 +36,14 @@ namespace Sever
             this.tbSeverPort = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbPayload = new System.Windows.Forms.TextBox();
             this.tbSend = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.닫기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbConsole
@@ -92,12 +96,12 @@ namespace Sever
             this.button2.Text = "Find Ip";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // tbPayload
             // 
-            this.textBox5.Location = new System.Drawing.Point(1043, 419);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(361, 31);
-            this.textBox5.TabIndex = 6;
+            this.tbPayload.Location = new System.Drawing.Point(1043, 419);
+            this.tbPayload.Name = "tbPayload";
+            this.tbPayload.Size = new System.Drawing.Size(361, 31);
+            this.tbPayload.TabIndex = 6;
             // 
             // tbSend
             // 
@@ -122,6 +126,28 @@ namespace Sever
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // contextMenu
+            // 
+            this.contextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.열기ToolStripMenuItem,
+            this.닫기ToolStripMenuItem});
+            this.contextMenu.Name = "contextMenu";
+            this.contextMenu.Size = new System.Drawing.Size(241, 101);
+            // 
+            // 열기ToolStripMenuItem
+            // 
+            this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
+            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.열기ToolStripMenuItem.Text = "열기";
+            // 
+            // 닫기ToolStripMenuItem
+            // 
+            this.닫기ToolStripMenuItem.Name = "닫기ToolStripMenuItem";
+            this.닫기ToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.닫기ToolStripMenuItem.Text = "닫기";
             // 
             // Form1
             // 
@@ -130,7 +156,7 @@ namespace Sever
             this.ClientSize = new System.Drawing.Size(1416, 547);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbSend);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbPayload);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbSeverPort);
@@ -139,6 +165,9 @@ namespace Sever
             this.Controls.Add(this.tbConsole);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,11 +181,14 @@ namespace Sever
         private System.Windows.Forms.TextBox tbSeverPort;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbPayload;
         private System.Windows.Forms.Button tbSend;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Timer timer1_Elasped;
+        private System.Windows.Forms.ContextMenuStrip contextMenu;
+        private System.Windows.Forms.ToolStripMenuItem 열기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 닫기ToolStripMenuItem;
     }
 }
 

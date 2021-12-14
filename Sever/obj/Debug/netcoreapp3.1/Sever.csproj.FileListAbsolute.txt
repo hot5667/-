@@ -13,3 +13,7 @@ C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.csproj.Core
 C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.dll
 C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.pdb
 C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.genruntimeconfig.cache
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Xamarin.Forms.Core.dll
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Xamarin.Forms.Platform.dll
+C:\Users\user\source\repos\Sever\Sever\bin\Debug\netcoreapp3.1\Xamarin.Forms.Xaml.dll
+C:\Users\user\source\repos\Sever\Sever\obj\Debug\netcoreapp3.1\Sever.csproj.CopyComplete
